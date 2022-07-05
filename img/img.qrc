@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="img">
+    <file>aguacate.jpg</file>
+    <file>empleo-joven-campo.jpg</file>
+    <file>login.jpeg</file>
+  </qresource>
+</RCC>
