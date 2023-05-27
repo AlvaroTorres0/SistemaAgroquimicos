@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from img import res
+from img import img
 import sys
 
 class Ui_Login(object):

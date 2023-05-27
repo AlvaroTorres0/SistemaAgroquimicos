@@ -1,7 +1,9 @@
 <RCC>
   <qresource prefix="img">
+    <file>producto.jpg</file>
+    <file>venta.jpg</file>
     <file>aguacate.jpg</file>
-    <file>empleo-joven-campo.jpg</file>
     <file>login.jpeg</file>
+    <file>venta.jpg</file>
   </qresource>
 </RCC>

@@ -30,6 +30,7 @@ class Principal(QtWidgets.QMainWindow):
                 extender = normal
                 extender2 = normal
 
+        # Movemos la barra completa
         self.animacionBarraGeneral = QPropertyAnimation(self.ui.frmBarraLateral, b'minimumWidth')
         self.animacionBarraGeneral.setDuration(300)
         self.animacionBarraGeneral.setStartValue(width)
@@ -37,35 +38,34 @@ class Principal(QtWidgets.QMainWindow):
         self.animacionBarraGeneral.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
         self.animacionBarraGeneral.start()
 
-        self.animacionFrmProductos = QPropertyAnimation(self.ui.frmProductos, b'minimumWidth')
-        self.animacionFrmProductos.setDuration(450)
-        self.animacionFrmProductos.setStartValue(width)
-        self.animacionFrmProductos.setEndValue(extender2)
-        self.animacionFrmProductos.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
-        self.animacionFrmProductos.start()
+        # Movemos cada una de las secciones
+        self.animacionProductos = QPropertyAnimation(self.ui.frmProductos, b'minimumWidth')
+        self.animacionProductos.setDuration(450)
+        self.animacionProductos.setStartValue(width)
+        self.animacionProductos.setEndValue(extender2)
+        self.animacionProductos.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
+        self.animacionProductos.start()
 
-        self.animacionFrmEmpleados = QPropertyAnimation(self.ui.frmEmpleados, b'minimumWidth')
-        self.animacionFrmEmpleados.setDuration(450)
-        self.animacionFrmEmpleados.setStartValue(width)
-        self.animacionFrmEmpleados.setEndValue(extender2)
-        self.animacionFrmEmpleados.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
-        self.animacionFrmEmpleados.start()
+        self.animacionVentas = QPropertyAnimation(self.ui.frmVentas, b'minimumWidth')
+        self.animacionVentas.setDuration(450)
+        self.animacionVentas.setStartValue(width)
+        self.animacionVentas.setEndValue(extender2)
+        self.animacionVentas.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
+        self.animacionVentas.start()
 
-        self.animacionFrmVentas = QPropertyAnimation(self.ui.frmVentas, b'minimumWidth')
-        self.animacionFrmVentas.setDuration(450)
-        self.animacionFrmVentas.setStartValue(width)
-        self.animacionFrmVentas.setEndValue(extender2)
-        self.animacionFrmVentas.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
-        self.animacionFrmVentas.start()
+        self.animacionEmpleados = QPropertyAnimation(self.ui.frmEmpleados, b'minimumWidth')
+        self.animacionEmpleados.setDuration(450)
+        self.animacionEmpleados.setStartValue(width)
+        self.animacionEmpleados.setEndValue(extender2)
+        self.animacionEmpleados.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
+        self.animacionEmpleados.start()
 
-        self.animacionFrmSalir = QPropertyAnimation(self.ui.frmSalir, b'minimumWidth')
-        self.animacionFrmSalir.setDuration(450)
-        self.animacionFrmSalir.setStartValue(width)
-        self.animacionFrmSalir.setEndValue(extender2)
-        self.animacionFrmSalir.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
-        self.animacionFrmSalir.start()
-
-
+        self.animacionSalir = QPropertyAnimation(self.ui.frmSalir, b'minimumWidth')
+        self.animacionSalir.setDuration(450)
+        self.animacionSalir.setStartValue(width)
+        self.animacionSalir.setEndValue(extender2)
+        self.animacionSalir.setEasingCurve(QtCore.QEasingCurve.InOutQuart)
+        self.animacionSalir.start()
 
 
 # Creamos la aplicación, iniciamos y definimos el método de salida
